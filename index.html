@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>堅石營造 | 專業廠房興建與自地自建 | 中部甲級營造廠推薦</title>
+    <meta name="description" content="堅石營造專注於鋼骨結構(SC)、RC鋼筋混凝土工程、自地自建與廠房規劃。擁有甲級營造執照，提供透明化估價與全方位保固，是您值得信賴的工程夥伴。">
+    <meta name="keywords" content="營造公司, 廠房興建, 自地自建, H型鋼結構, 混凝土工程, 台中營造">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        construction: {
+                            base: '#1e293b', // 深藍灰 (穩重)
+                            accent: '#f59e0b', // 工程黃 (警示/亮點)
+                            light: '#f3f4f6', // 混凝土灰 (背景)
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+    <nav class="bg-construction-base text-white fixed w-full z-50 shadow-lg opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-helmet-safety text-construction-accent text-3xl"></i>
+                    <span class="font-black text-2xl tracking-wider">堅石營造</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="hover:text-construction-accent transition">關於我們</a>
+                    <a href="#services" class="hover:text-construction-accent transition">服務項目</a>
+                    <a href="#projects" class="hover:text-construction-accent transition">工程實績</a>
+                    <a href="#faq" class="hover:text-construction-accent transition">常見問題</a>
+                    <a href="#contact" class="bg-construction-accent text-slate-900 px-5 py-2 rounded font-bold hover:bg-yellow-400 transition shadow-md">
+                        免費估價
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button onclick="toggleMenu()" class="text-white hover:text-construction-accent focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800">
+            <a href="#about" class="block px-4 py-3 hover:bg-slate-700 border-b border-slate-700">關於我們</a>
+            <a href="#services" class="block px-4 py-3 hover:bg-slate-700 border-b border-slate-700">服務項目</a>
+            <a href="#projects" class="block px-4 py-3 hover:bg-slate-700 border-b border-slate-700">工程實績</a>
+            <a href="#contact" class="block px-4 py-3 text-construction-accent font-bold">立即諮詢</a>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                 alt="Construction Site" class="w-full h-full object-cover opacity-30">
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <div class="inline-block bg-construction-accent text-slate-900 px-3 py-1 rounded-full font-bold text-sm mb-6 tracking-wide">
+                甲級營造執照 · 30年工程經驗
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+                精準工藝，<span class="text-construction-accent">堅若磐石</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 font-light">
+                從地基到天際，我們苛求每一個毫米的細節。<br class="hidden md:block">
+                專注於高規格廠房興建與自地自建工程。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="px-8 py-4 bg-construction-accent text-slate-900 font-bold rounded hover:bg-yellow-400 transition shadow-lg text-lg">
+                    預約基地現勘
+                </a>
+                <a href="#projects" class="px-8 py-4 border-2 border-white text-white font-bold rounded hover:bg-white hover:text-slate-900 transition text-lg">
+                    瀏覽完工案例
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1581094794329-cd6753354424?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Engineer looking at blueprints" class="rounded-lg shadow-2xl">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-construction-base mb-6 border-l-4 border-construction-accent pl-4">
+                        堅守品質，始終如一
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        堅石營造深知，建築是良心事業。每一根鋼筋的綁紮、每一方混凝土的澆置，都關乎著使用者的生命財產安全。
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        我們的團隊由資深土木技師與工地主任組成，擅長 <strong>RC 鋼筋混凝土</strong> 與 <strong>SS 鋼骨結構</strong> 工程。不同於傳統營造廠，我們導入數位化管理，確保工程進度透明，並致力於達成「零職災、零糾紛、如期交付」的承諾。
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-4 text-center border-t pt-8">
+                        <div>
+                            <div class="text-3xl font-black text-construction-accent">150+</div>
+                            <div class="text-sm text-gray-500 mt-1">完工建案</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-black text-construction-accent">30年</div>
+                            <div class="text-sm text-gray-500 mt-1">在地經驗</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-black text-construction-accent">100%</div>
+                            <div class="text-sm text-gray-500 mt-1">按圖施工</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-construction-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-construction-base mb-4">專業工程服務</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">我們專注於結構安全與耐久性，提供從規劃到施工的一條龍服務。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-construction-accent group-hover:text-white transition">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">現代化廠房興建</h3>
+                    <p class="text-gray-600 mb-4">
+                        專精大跨距 **H型鋼結構** 吊裝，結合高強度彩色鋼板。針對重型機具需求，提供**整體粉光**與硬化地坪施工，確保地坪耐磨抗壓。
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>鋼構防火披覆處理</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>工業用電/管線配置</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-14 h-14 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-construction-accent group-hover:text-white transition">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">自地自建 / 危老重建</h3>
+                    <p class="text-gray-600 mb-4">
+                        協助業主從建築設計溝通、請照到營造施工。嚴格控制 **RC 混凝土** 澆置品質，杜絕蜂窩、冷縫，打造百年傳家宅。
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>透明化預算清單</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>防水工程保固</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-construction-accent group-hover:text-white transition">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">土木與基礎工程</h3>
+                    <p class="text-gray-600 mb-4">
+                        包含連續壁施作、基地整地、擋土牆工程。使用高精密測量儀器，確保結構定位零誤差。
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>ISO 標準作業流程</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>廢棄物合法清運</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-construction-base text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">開始您的營建計畫</h2>
+                    <p class="text-gray-400 mb-8">
+                        無論是廠房規劃或私人住宅，歡迎填寫表單或直接來電。我們會安排專人為您進行初步的基地分析與預算評估。
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-location-dot text-construction-accent text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">公司地址</h4>
+                                <p class="text-gray-400">台中市西屯區台灣大道三段 (示範地址)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-phone text-construction-accent text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">聯絡電話</h4>
+                                <p class="text-gray-400">04-2345-6789</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-envelope text-construction-accent text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">電子信箱</h4>
+                                <p class="text-gray-400">service@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
+                    <form action="#" method="POST" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-bold mb-2">聯絡人姓名</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-construction-accent" placeholder="王大明">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-bold mb-2">聯絡電話</label>
+                                <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-construction-accent" placeholder="0912-345678">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-2">預算範圍</label>
+                                <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-construction-accent">
+                                    <option>請選擇...</option>
+                                    <option>1000萬以下</option>
+                                    <option>1000萬 - 3000萬</option>
+                                    <option>3000萬以上</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2">工程需求類型</label>
+                            <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-construction-accent">
+                                <option>自地自建 (住宅)</option>
+                                <option>廠房/辦公室興建</option>
+                                <option>老屋整建/拉皮</option>
+                                <option>其他土木工程</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2">需求描述 / 基地位置</label>
+                            <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-construction-accent h-32" placeholder="請簡述您的需求，例如：地坪大小、樓層規劃、或是基地大概位置..."></textarea>
+                        </div>
+                        <button type="button" class="w-full bg-construction-accent text-slate-900 font-bold py-3 rounded-lg hover:bg-yellow-400 transition">
+                            發送詢價單
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-gray-500 py-8 text-center border-t border-gray-800">
+        <p>&copy; 2025 堅石營造有限公司. All Rights Reserved.</p>
+        <p class="text-sm mt-2">甲級綜合營造業登記證字號：M00000-000</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
